@@ -1,0 +1,161 @@
+
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+       }
+       
+       nav{
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            margin: 10px 15px;
+       }
+       nav a{
+            font-size: 16px;
+            font-weight: 600;
+            color: black;
+            text-decoration: none;
+            padding: 10px 14px;
+       }
+       nav a:hover{
+            text-decoration: underline;
+       }
+       .menu-icon, .gmail-logo{
+            width: 40px;
+            padding: 5px;
+            border-radius: 50%;
+       }
+       .menu-icon:hover{
+            opacity: 0.7;
+       }
+       
+       
+       
+       header{
+            width: 60%;
+            margin: 90px auto 20px auto;
+       }
+       .google-img{
+            display: block;
+            margin: 0 auto;
+       }
+       .search-box{
+            width: 600px;
+            margin: 22px auto;
+            position: relative;
+       }
+       .search-box input{
+            display: block;
+            width: 100%;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            padding: 13px;
+            border-radius: 25px;
+            outline: none;
+            box-shadow: 5px 2px 10px rgba(128, 128, 128, 0.626);
+            padding-left: 50px;
+       }
+       .search-icon{
+            opacity: 0.6;
+            position: absolute;
+            top: 15px;
+            left: 20px;
+       }
+       .voice-mic{
+            position: absolute;
+            top: 10px;
+            right: 60px;
+       }
+       .google-camera{
+            width: 22px;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+       }
+       
+       .main-card{
+            width: 600px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+       }
+       .singleCard{
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.1s;
+       }
+       /* .singleCard i{
+            color: ;
+            margin-bottom: 10px;
+            background-color: rgba(128, 128, 128, 0.174);
+            padding: 10px;
+            border-radius: 50%;
+       } */
+       
+       .singleCard i {
+            color: #333; /* Default color for icons */
+            margin-bottom: 10px;
+            background-color: rgba(128, 128, 128, 0.174);
+            padding: 10px;
+            border-radius: 50%;
+       }
+       .singleCard:hover{
+            background-color: rgba(243, 217, 217, 0.581);
+       }
+       
+       /* .close-icon {
+            position: absolute;
+            right: 10px;
+            display: none;
+          } */
+          
+          /* .singleCard:hover .close-icon {
+            display: block;
+          } */
+       
+       .container {
+            position: relative;
+        }
+        
+        #dropdown {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+         
+        }
+        
+        .dropdown-item {
+            padding: 8px 10px;
+            cursor: pointer;
+        }
+        
+        .dropdown-item:hover {
+            background-color: #f3f4f6;
+        }
+        
+        .hidden {
+            display: none;
+        }
+       
+       .clear-button {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            /* transform: translateY(-50%); */
+            background-color: transparent;
+            border: none;
+            color: #777;
+            cursor: pointer;
+            display: none; /* Initially hidden */
+        }
+        
+        .clear-button:hover {
+            color: #333;
+        }

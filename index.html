@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+   
+    <script src="https://kit.fontawesome.com/92ae17eca5.js" crossorigin="anonymous"></script>
+
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/"> Gmail </a>
+      <a href="/"> Images </a>
+      <a href="/">
+        <img class="menu-icon" src="images/g-menu.png" alt="Menu Photos" />
+      </a>
+      <a href="/">
+        <img class="gmail-logo" src="images/profile-img.jpg" alt="Gmail Logo" />
+      </a>
+    </nav>
+    <header>
+      <div>
+        <img
+          class="google-img"
+          src="images/google-banner.png"
+          alt="Google Text"
+        />
+      </div>
+
+      <!-- for search  -->
+      <div class="container">
+        <form class="search-box">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input id="searchInput" type="search" placeholder="Search Google or Type a URL">
+            <button id="clearButton" class="clear-button" aria-label="Clear search">X</button>
+            <img class="voice-mic" src="images/voice-mic.svg" alt="Google Mic">
+            <img class="google-camera" src="images/cemera.svg" alt="Google Camera">
+        </form>
+        <div id="dropdown" class="hidden">
+            <!-- Dropdown items will be added dynamically using JavaScript -->
+        </div>
+    </div>
+
+
+      <div class="main-card">
+        <div class="singleCard">
+          <i class="fa-brands fa-youtube" style="color: #f13b3b"></i>
+          <!-- <div class="close-icon"><i class="fas fa-times"></i></div> -->
+          <p>YouTube</p>
+        </div>
+        <div class="singleCard">
+          <i class="fab fa-github text-gray-500"></i>
+          <!-- <div class="close-icon"><i class="fas fa-times"></i></div> -->
+          <p>GitHub</p>
+        </div>
+        <div class="singleCard">
+          <i class="fa-brands fa-square-instagram" style="color: #f2509e"></i>
+          <!-- <div class="close-icon"><i class="fas fa-times"></i></div> -->
+          <p>Instagram</p>
+        </div>
+        <div class="singleCard">
+          <i class="fa-brands fa-facebook" style="color: #048af1"></i>
+          <!-- <div class="close-icon"><i class="fas fa-times"></i></div> -->
+          <p>Facebook</p>
+        </div>
+        <div class="singleCard">
+          <i class="fa-brands fa-linkedin" style="color: #26608c"></i>
+          <!-- <div class="close-icon"><i class="fas fa-times"></i></div> -->
+          <p>LinkedIn</p>
+        </div>
+        <div class="singleCard">
+          <i class="fas fa-plus text-gray-500"></i>
+          <!-- <div class="close-icon"><i class="fas fa-times"></i></div> -->
+          <p>Add Shortcut</p>
+        </div>
+      </div>
+      
+    </header>
+
+    <script src="js.js"></script>
+    
+
+  </body>
+</html>
